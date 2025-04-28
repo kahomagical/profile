@@ -1,29 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Potta+One&display=swap');
 
 body {
-  background:#f8e8d3;
+  background:#efe1d1;
   font-family: "Noto Sans Display", sans-serif;
-  font-optical-sizing: ;
-  font-weight: 300; /* if you want the light version */
-  font-style: ;
+  font-optical-sizing: auto;
+  font-weight: 300;
   color:#264653;
 }
 
-/* color palett
-  e76f51 f4a261 e9c46a
-  */
-
 .container {
-  width: 700px;
+  width: 500px;
   margin: 0 auto;
 }
 
-h2, {
+h2 {
   font-family: "Noto Sans Display", sans-serif;
   font-weight: 400;
-  font-style: normal;
-  color: ;
-  font-size: 40px;
+  font-size: 28px;
 }
 
 a {
@@ -35,45 +28,76 @@ p {
   line-height: 1.6;
 }
 
-.card-no-boardar {
+.card-top {
+  width: 500px;
   background: #f8e6cf;
-  padding: 20px;
+  padding: 16px;
   border-radius: 16px;
-  margin: 20px 0;
+  margin: 16px 0;
   text-align: center;
   font-size: 10px;
   color:#324c56
-  font-weight: lighter;
 }
 
 .card {
+  width: 500px;
   background: #f8e6cf;
-  padding: 30px;
+  padding: 16px;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
-  margin: 20px 0;
-  border: 5px solid #e76f51;
+  margin: 16px 0;
   text-align: center;
 }
 
-.img {
+.top_img {
   width: 300px;
-  /* height: 300px; */
   object-fit: cover;
   object-position: center;
+}
+
+.link:hover {
+  color: #cf4927;
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.list-inline-item {
+  display: inline-block;
+  margin: 16px;
 }
 
 ul {
   list-style: none;
   padding:0px;
   margin:0px;
+  margin-bottom: 12px;
 }
 
-iframe{
+iframe {
   margin-top: 12px;
   margin-bottom: 12px;
 }
 
+.btn {
+  background-color: #efe1d1;
+  padding: 6px;
+  margin: 6px;
+  font-weight: 400;
+  color:#264653;
+  border: 2px solid;
+  border-radius: 8px;
+  border-color: #efe1d1;
+  display: inline-block;
+}
+
+.btn:hover {
+  border: 10px;
+  font-weight:400;
+  color: #cf4927
+}
 
 @keyframes pulse {
   0% {
@@ -92,7 +116,7 @@ iframe{
   }
 }
 
-media (max-width: 960px) {
+@media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
@@ -111,3 +135,4 @@ media (max-width: 960px) {
   .container {
     width: 200px;
   }
+}
